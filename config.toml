@@ -1,6 +1,6 @@
 # connection settings
-grpc_url = "http://45.152.160.253:10001"
-vote_account = "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a"
+grpc_url = "grpc_url"
+vote_account = "vote_pubkey"
 
 [performance_logging]
 # enable or disable performance logging

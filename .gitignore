@@ -1,0 +1,11 @@
+# compiled files and dependencies
+/target/
+/performance_issues/
+**/*.rs.bk
+
+Cargo.lock
+
+*.bak
+*.tmp
+*.swp
+

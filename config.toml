@@ -1,0 +1,47 @@
+# connection settings
+grpc_url = "http://45.152.160.253:10001"
+vote_account = "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a"
+
+[performance_logging]
+# enable or disable performance logging
+enabled = true
+
+# latency thresholds (in slots)
+# save votes with latency >= min_latency_threshold
+min_latency_threshold = 1
+# save votes with latency <= max_latency_threshold (optional, no upper limit if not set)
+# max_latency_threshold = 10
+
+# tvc credit thresholds
+# save votes with tvc credits >= min_tvc_threshold (optional, no lower limit if not set)
+# min_tvc_threshold = 1
+# save votes with tvc credits <= max_tvc_threshold
+max_tvc_threshold = 15
+
+# performance levels to save 
+# available levels: "optimal", "good", "fair", "poor", "critical"
+# empty array means save all performance levels
+performance_levels = ["good", "fair", "poor", "critical", "optimal"]
+
+# example configurations:
+#
+# save only votes with latency >= 2 slots:
+# min_latency_threshold = 2
+# max_latency_threshold = null
+# min_tvc_threshold = null
+# max_tvc_threshold = null
+# performance_levels = []
+#
+# save votes with latency between 1-5 slots:
+# min_latency_threshold = 1
+# max_latency_threshold = 5
+# min_tvc_threshold = null
+# max_tvc_threshold = null
+# performance_levels = []
+#
+# save only critical performance votes (TVC <= 3):
+# min_latency_threshold = null
+# max_latency_threshold = null
+# min_tvc_threshold = null
+# max_tvc_threshold = 3
+# performance_levels = ["critical"]

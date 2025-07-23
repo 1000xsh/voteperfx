@@ -1,0 +1,38 @@
+[package]
+name = "voteperfx"
+version = { workspace = true }
+edition = { workspace = true }
+rust-version = { workspace = true }
+
+[dependencies]
+anyhow = { workspace = true }
+grpc-client = { path = "../grpc-client" }
+tokio = { workspace = true, features = ["rt-multi-thread", "fs", "time", "signal"] }
+tokio-stream = { workspace = true }
+futures-util = { workspace = true }
+dotenvy = { workspace = true }
+pretty_env_logger = { workspace = true }
+log = { workspace = true }
+yellowstone-grpc-proto = { workspace = true }
+chrono = { workspace = true, features = ["serde"] }
+solana-sdk = { workspace = true }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+
+crossterm = "0.27"
+
+rustc-hash = "2.0"
+mimalloc = { version = "0.1", default-features = false }
+
+thiserror = "1.0"
+
+fd_bs58 = "0.1.0"
+
+[dev-dependencies]
+tokio-test = "0.4"
+
+[[bin]]
+name = "voteperfx"
+path = "src/main.rs"

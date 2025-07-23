@@ -8,6 +8,9 @@ solana vote monitor with real-time tvc (timely vote credits) tracking.
 - automatic poor performance detection and logging
 - optimized for low resource usage
 
+<img width="808" height="733" alt="Screenshot_20250723_213029" src="https://github.com/user-attachments/assets/15cad119-b2be-4014-839f-f51c5842ec73" />
+
+
 ## setup
 ```bash
 # clone and build
